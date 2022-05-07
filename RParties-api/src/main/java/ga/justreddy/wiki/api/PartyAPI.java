@@ -145,16 +145,26 @@ public final class PartyAPI implements IPartyManager {
     }
 
     @Override
-    public void getPartyByLeader(UUID leader) {
+    public Document getPartyByLeaderMongo(UUID leader) {
         if (!initialized) throw new PartyAPINotInitializedException();
-
+        return null;
     }
 
     @Override
-    public void getPartyByMember(UUID member) {
+    public Document getPartyByMemberMongo(UUID member) {
         if (!initialized) throw new PartyAPINotInitializedException();
-
+        return null;
     }
+
+    @Override
+    public String getPartyByLeaderSQL(UUID leader) {
+        return "";
+    }
+
+    public String getPartyByMemberSQL(UUID member) {
+        return "";
+    }
+
 
     @Override
     public boolean isPartyLeader(UUID member) {

@@ -28,9 +28,13 @@ interface IPartyManager {
 
     boolean isInPartyLeader(UUID leader);
 
-    void getPartyByLeader(UUID leader);
+    Document getPartyByLeaderMongo(UUID leader);
 
-    void getPartyByMember(UUID member);
+    Document getPartyByMemberMongo(UUID member);
+
+    String getPartyByLeaderSQL(UUID leader);
+
+    String getPartyByMemberSQL(UUID member);
 
     boolean isPartyLeader(UUID member);
 
