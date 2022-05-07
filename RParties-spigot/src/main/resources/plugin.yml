@@ -1,0 +1,5 @@
+name: RParties
+version: '${project.version}'
+main: ga.justreddy.wiki.rparties.RPartiesSpigot
+api-version: 1.18
+authors: [JustReddy]
