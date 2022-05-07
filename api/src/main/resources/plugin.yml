@@ -1,4 +1,0 @@
-name: RParties Api
-version: '${project.version}'
-main: ga.justreddy.wiki.api.rpartiesapi.RPartiesApi
-api-version: 1.18
